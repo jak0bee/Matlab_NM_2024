@@ -18,6 +18,7 @@ disp('Ode 23 solutions:')
 disp(num2str(ys_23));
 
 disp('------------------------------- C7 -------------------------------');
+disp(' ')
 
 f1 = @(t, y) cos(t) - y/3;
 y0 = 0;
@@ -26,3 +27,5 @@ t = 2;
 h = 0.2;
 
 Eulers(f1, t, h, t0, y0);
+
+Ralstons(f1, t, h, t0, y0);
